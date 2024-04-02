@@ -16,11 +16,9 @@ function onFormSubmit(ev) {
 }
 
 function renderAnswer({ answer, image }) {
-    console.log('render answer', answer)
     const strHTML = `
       <h1>${answer}</h1>
       <img src="${image}">`
-
     $('.answer-container').html(strHTML)
 
     answer === 'yes' ? getJoke(renderJoke) : getDog(renderDog)
