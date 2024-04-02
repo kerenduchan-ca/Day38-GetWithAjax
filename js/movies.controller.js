@@ -9,7 +9,6 @@ function onReloadClick() {
 }
 
 function renderGenres(genres) {
-    console.log('render genres', genres)
     const strHTMLs = genres.map(
         ({ name, id }) => `
       <button onclick="onGenreClick(${id})" class="btn">${name}</button>
@@ -23,7 +22,6 @@ function onGenreClick(genreId) {
 }
 
 function renderMoviesByGenre(movies) {
-    console.log(movies)
     const strHTMLs = movies
         .map(
             ({ title, overview, backdrop_path }) => `
