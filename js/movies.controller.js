@@ -8,6 +8,10 @@ function onReloadClick() {
     document.querySelector('.movies').innerHTML = ''
 }
 
+function onGenreClick(genreId) {
+    getMoviesByGenreId(genreId, renderMoviesInGenre)
+}
+
 function renderGenres(genres) {
     const strHTMLs = genres.map(
         ({ name, id }) => `
@@ -17,11 +21,7 @@ function renderGenres(genres) {
     document.querySelector('.btn-group').innerHTML = strHTMLs.join('')
 }
 
-function onGenreClick(genreId) {
-    getMoviesByGenreId(genreId, renderMoviesByGenre)
-}
-
-function renderMoviesByGenre(movies) {
+function renderMoviesInGenre(movies) {
     const strHTMLs = movies
         .map(
             ({ title, overview, backdrop_path }) => `
