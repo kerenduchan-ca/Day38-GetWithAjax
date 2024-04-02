@@ -1,4 +1,4 @@
-function httpGet(url, onSuccess) {
+function get(url, onSuccess) {
     var xhr = new XMLHttpRequest()
     xhr.open('GET', url, true)
 

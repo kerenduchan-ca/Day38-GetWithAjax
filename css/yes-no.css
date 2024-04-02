@@ -1,0 +1,57 @@
+@import 'base/util.css';
+
+.yes-no-container {
+    background-color: #3cad7e;
+    display: grid;
+    justify-items: center;
+    padding: 1rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+
+h2 {
+    color: #bbbbbb;
+    font-size: 1rem;
+}
+
+.form {
+    margin-top: 2rem;
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+}
+
+.form input {
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem;
+}
+
+.form button {
+    justify-self: center;
+}
+
+/* wider screens */
+@media (min-width: 576px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+
+    .yes-no-container {
+        padding: 3rem;
+    }
+}
+
+button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    min-width: 100px;
+}
