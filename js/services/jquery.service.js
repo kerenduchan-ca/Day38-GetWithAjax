@@ -1,3 +1,3 @@
-function get(url, onSuccess) {
+function ajaxGet(url, onSuccess) {
     $.get(url, onSuccess)
 }

@@ -6,10 +6,10 @@
         <link rel="stylesheet" href="css/yes-no.css" />
         <title>Yes/No</title>
     </head>
-    <body onload="onInit()">
+    <body>
         <section class="container yes-no-container">
-            <h1>Ask Anything</h1>
-            <h2>Yes/No</h2>
+            <h1 class="main-title">Ask Anything</h1>
+            <h2 class="main-subtitle">Yes/No</h2>
             <form class="form">
                 <input
                     class="user-query"
@@ -24,6 +24,7 @@
         <section class="answer-container container"></section>
         <section class="joke-or-dog container"></section>
 
+        <!-- AJAX using JQuery -->
         <script src="lib/jquery-3.7.1.min.js"></script>
         <script src="js/services/jquery.service.js"></script>
         <script src="js/services/yes-no.service.js"></script>
