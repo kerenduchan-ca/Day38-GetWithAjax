@@ -1,3 +1,5 @@
+'use strict'
+
 function ajaxGet(url, onSuccess) {
     const xhr = new XMLHttpRequest()
     xhr.open('GET', url, true)
