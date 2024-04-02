@@ -1,0 +1,35 @@
+@import 'base/util.css';
+
+.contacts-container {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.card .title {
+    font-weight: 600;
+    background-color: #faebd7;
+    padding: 0.3rem;
+}
+
+.card .contents {
+    font-size: 0.9rem;
+    background-color: #f0f8ff;
+    padding: 0.5rem 0;
+    padding-inline-end: 2rem;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 6rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card .contents .description .field {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.card .contents .description .field .label::after {
+    content: ':';
+}
